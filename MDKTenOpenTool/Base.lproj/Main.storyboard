@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rCI-Ud-BWy"/>
+                        <viewControllerLayoutGuide type="bottom" id="9rT-1N-6nW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Vnz-ao-Xnv">
+                                <rect key="frame" x="50" y="70" width="275" height="547"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeO-Gc-rgW">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="109.5"/>
+                                        <state key="normal" title="openCamera"/>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YdN-Lu-IN5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKa-hh-yWm">
+                                        <rect key="frame" x="0.0" y="109.5" width="275" height="109.5"/>
+                                        <state key="normal" title="openPhotos"/>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XFj-kN-egF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qx-4X-8wJ">
+                                        <rect key="frame" x="0.0" y="219" width="275" height="109"/>
+                                        <state key="normal" title="openMicrophone"/>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9F9-Jk-RnB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj8-xg-M13">
+                                        <rect key="frame" x="0.0" y="328" width="275" height="109.5"/>
+                                        <state key="normal" title="openContact"/>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r0G-jY-Lkq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdV-r8-tu3">
+                                        <rect key="frame" x="0.0" y="437.5" width="275" height="109.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal">
+                                            <string key="title">openLocation
+if didn't enable system location,will open system location(below iOS 11)</string>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYF-KC-W4O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Vnz-ao-Xnv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="7lU-1K-heM"/>
+                            <constraint firstItem="Vnz-ao-Xnv" firstAttribute="top" secondItem="rCI-Ud-BWy" secondAttribute="bottom" constant="50" id="BZm-8B-I23"/>
+                            <constraint firstItem="9rT-1N-6nW" firstAttribute="top" secondItem="Vnz-ao-Xnv" secondAttribute="bottom" constant="50" id="PdQ-r3-O1g"/>
+                            <constraint firstAttribute="trailing" secondItem="Vnz-ao-Xnv" secondAttribute="trailing" constant="50" id="SMq-QZ-NS6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
